@@ -1,0 +1,67 @@
+[
+    {
+        "fname": "Manal",
+        "Lname": "Mohammed",
+        "age":15,
+        "boldTypy":"+A",
+        "phoneNumber":"0558324750",
+        "password":"123456",
+         "gender":"female"
+          },
+          {
+        "fname": "Amal",
+        "Lname": "Khaled",
+        "age":20,
+        "boldTypy":"-A",
+        "phoneNumber":"0501274659",
+        "password":"123456",
+         "gender":"female"
+        
+          },
+          {
+               "fname": "Mohammed",
+        "Lname": "Abdulrahmman",
+        "age":28,
+        "boldTypy":"+AB",
+        "phoneNumber":"0530283940",
+        "password":"654321",
+         "gender":"male"
+          },
+          { "fname": "Ghadeer",
+        "Lname": "Mansour",
+        "age":23,
+        "boldTypy":"+O",
+        "phoneNumber":"0551984756",
+        "password":"654321",
+         "gender":"female"
+        },
+         
+        {
+             "fname": "Razan",
+        "Lname": "Naser",
+        "age":18,
+        "boldTypy":"+B",
+        "phoneNumber":"0501020304",
+        "password":"",
+         "gender":"Female"
+        },
+        { 
+            "fname": "Ahmad",
+        "Lname": "Abdullah",
+        "age":30,
+        "boldTypy":"+O",
+        "phoneNumber":"0550109876",
+        "password":"654321",
+         "gender":"male"
+        },
+        {
+        "fname": "Mansour",
+        "Lname": "Mohammed",
+        "age":48,
+        "boldTypy":"+B",
+        "phoneNumber":"0557654432",
+        "password":"123456",
+         "gender":"male"
+        }
+        ]
+    
