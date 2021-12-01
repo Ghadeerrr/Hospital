@@ -4,7 +4,7 @@ package com.example.demo.Appointment;
 import com.example.demo.doctors.Doctor;
 import com.example.demo.doctors.doctorRepository;
 import com.example.demo.patients.Patient;
-import com.example.demo.patients.patientRepository;
+import com.example.demo.patients.PatientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,9 +18,9 @@ public class AppointmentService {
 
     private final appointmentRepository appointmentRepository;
     private final doctorRepository doctorrepository;
-    private final patientRepository patientrepository;
+    private final PatientRepository patientrepository;
 
-    public AppointmentService(com.example.demo.Appointment.appointmentRepository appointmentRepository, doctorRepository doctorrepository, patientRepository patientrepository) {
+    public AppointmentService(com.example.demo.Appointment.appointmentRepository appointmentRepository, doctorRepository doctorrepository, PatientRepository patientrepository) {
         this.appointmentRepository = appointmentRepository;
         this.doctorrepository = doctorrepository;
         this.patientrepository = patientrepository;
