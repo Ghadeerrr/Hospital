@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.flex {
+  color: #858080;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+  text-align: center;
+  font-size: 4.5rem;
+}
+h1 {
+  color: black;
+}
+p {
+  color: #343434;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+  background: transparent;
+}
+
+.header1 {
+  background-image: linear-gradient(
+      rgba(41, 39, 39, 0.623),
+      rgba(41, 39, 39, 0.247)
+    ),
+    url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
+  min-height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.div {
+  margin-top: -5%;
+  margin-bottom: 20%;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 50%;
+}
+.div h1 {
+  font-size: 4rem;
+  padding-bottom: 0.4rem;
+  font-family: "Zen Antique", serif;
+}
+
+.hero-btns button {
+  border: 3.5px solid #fff;
+  border-radius: 2rem;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+}
+.btn-trans {
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.btn-trans:hover {
+  background: #139279;
+  border-color: #139279;
+}
+.btn-white {
+  background: #fff;
+  color: #343434;
+  transition: 0.5s ease-in-out;
+}
+.btn-white:hover {
+  background: transparent;
+  color: #fff;
+}
+.h-header {
+  font-size: 100%;
+  size: 100%;
+  color: #fff;
+}
+.p-header {
+  color: #fff;
+}
+.d-block {
+  border: #139279 solid 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: 0.2rem solid #139279;
+  border-radius: 0.5rem;
+  box-shadow: 0.4rem 0.4rem 0 rgba(73, 69, 69, 0.2);
+  color: #139279;
+  cursor: pointer;
+  font-size: 3rem;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #139279;
+  color: #fff;
+}
+
+.btn:hover span {
+  color: #139279;
+  background: #fff;
+  margin-left: 1rem;
+}
