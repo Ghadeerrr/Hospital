@@ -1,0 +1,29 @@
+.icons-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  padding-top: 5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.Icon-S {
+  color: #16a085;
+  font-size: 4rem !important;
+}
+
+.icons-container .icons {
+  border: 0.2rem solid #16a085;
+  box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.icons-container .icons h3 {
+  font-size: 2rem;
+}
+
+.icons-container .icons p {
+  font-size: 1.3rem;
+  color: rgb(80, 77, 77);
+}
