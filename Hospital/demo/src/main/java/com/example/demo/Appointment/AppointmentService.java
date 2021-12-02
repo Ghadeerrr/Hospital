@@ -35,8 +35,9 @@ public class AppointmentService {
         return appointmentRepository.findById(Id).orElse(null);
     }
 
-    public Appointment createAppointment(Appointment appointment){
-        return appointmentRepository.save(appointment);
+    public String createAppointment(Appointment appointment){
+        appointmentRepository.save(appointment);
+        return "Created";
     }
 
     public String deleteAppointment(String id){

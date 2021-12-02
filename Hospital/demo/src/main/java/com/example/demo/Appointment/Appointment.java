@@ -2,6 +2,7 @@ package com.example.demo.Appointment;
 
 import com.example.demo.doctors.Doctor;
 import com.example.demo.patients.Patient;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
@@ -17,23 +18,12 @@ public class Appointment {
     private String date;
     private String state;
 
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "doctor_id", referencedColumnName = "id")
-//    private Doctor doctor;
-
-//    @ManyToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "patient_id", referencedColumnName = "id")
-//    private Patient patient;
-
-
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = true)
     @JoinColumn(name = "doctor_id")
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Doctor doctor;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(fetch = FetchType.EAGER, optional = true)
     @JoinColumn(name = "patient_id")
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Patient patient;
 
     public Appointment(){}
