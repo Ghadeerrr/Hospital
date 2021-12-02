@@ -68,4 +68,8 @@ public class AppointmentService {
         }
         return appointment;
     }
+
+    public List<Appointment> getPatientAppointment(int patient_id){
+        return appointmentRepository.findAllBypatient_id(patient_id);
+    }
 }
