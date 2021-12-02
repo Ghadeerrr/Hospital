@@ -40,6 +40,11 @@ public class DoctorController {
 
     }
 
+    @GetMapping ("/{id}")
+    public List<Doctor> getDoctorDeprtment(@PathVariable int id){
+        return doctordervice.getDoctorDepartment(id);
+    }
+
 
 }
 
