@@ -28,6 +28,10 @@ public class DoctorService {
         return doctorrepository.save(doctor);
     }
 
+    public List<Doctor> getDoctorDepartment(int departmentId){
+        return doctorrepository.findAllBydepartment_id(departmentId);
+    }
+
 
 
     public List<Doctor> getDoctors(){
