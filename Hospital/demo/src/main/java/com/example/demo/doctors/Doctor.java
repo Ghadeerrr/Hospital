@@ -1,6 +1,9 @@
 package com.example.demo.doctors;
 
+import com.example.demo.departments.Department;
+
 import javax.persistence.*;
+
 
 @Entity
 @Table(name = "doctors")
@@ -15,13 +18,24 @@ public class Doctor {
     private String password;
     private String gender;
     private String img;
+    @ManyToOne(fetch = FetchType.EAGER, optional = true)
+    @JoinColumn(name = "department_id")
+    private Department department;
 
 
 
     public Doctor() {
     }
 
-    public Doctor(int id, String firstName, String lasttName, String phoneNumber, String password, String gender, String img) {
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public Doctor(int id, String firstName, String lasttName, String phoneNumber, String password, String gender, String img , Department department) {
         this.id = id;
         this.firstName = firstName;
         this.lasttName = lasttName;
@@ -29,6 +43,7 @@ public class Doctor {
         this.password = password;
         this.gender = gender;
         this.img = img;
+        this.department=department;
     }
 
     public int getId() {
