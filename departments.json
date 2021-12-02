@@ -1,0 +1,25 @@
+[
+    {
+        "name":"Ophthalmology",
+        "description":"TThe Department of Ophthalmology comprises of highly skilled, well-equipped ophthalmologists and professional staff providing a complete range of medical treatment and surgical care for both routine and complex eye-related disorders. "
+    },
+    
+    {
+        "name":"Pediatrics",
+        "description":"The Department of Pediatrics provides highly specialized healthcare solutions to a wide range of children’s diseases. Its services include allergy/immunology, endocrinology/diabetes and pediatric intensive care units. "
+    },
+    {
+        "name":"Dentists",
+        "description":"Our professional team of dentists, Specialists in prosthodontics, orthodontics, periodontics, endodontic& oral/Maxillofacial Surgery, in addition to our skillful dental hygienists prides itself on providing high quality dental care to patients of all age."
+    },
+    
+    {
+        "name":"Internal medicine ",
+        "description":"Internal medicine or general internal medicine (in Commonwealth nations) is the medical specialty dealing with the prevention, diagnosis, and treatment of internal diseases."
+    },
+    
+    {
+        "name":"Ophthalmology",
+        "description":"The Department of Ophthalmology comprises of highly skilled, well-equipped ophthalmologists and professional staff providing a complete range of medical treatment and surgical care for both routine and complex eye-related disorders."
+    }
+    ]
