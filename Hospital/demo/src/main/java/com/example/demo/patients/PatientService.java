@@ -58,6 +58,11 @@ public class PatientService {
 
     }
 
+    public void addPatients(List<Patient> patients){
+        for(int i=0;i<patients.size();i++){
+            patientRepository.save(patients.get(i));}
+    }
+
 }
 
 

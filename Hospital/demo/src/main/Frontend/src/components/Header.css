@@ -58,6 +58,7 @@ button {
   border-radius: 2rem;
   padding: 0.8rem 2rem;
   text-transform: uppercase;
+  margin: 5px;
 }
 .btn-trans {
   color: #fff;

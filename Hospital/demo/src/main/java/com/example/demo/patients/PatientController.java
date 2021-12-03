@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path= "patients")
+@CrossOrigin("*")
 public class PatientController {
 
     private final PatientService patientService;
@@ -43,6 +44,12 @@ public class PatientController {
     @PutMapping("/{id}")
     public Patient updatePatient(@PathVariable String id, @RequestBody Patient data){
        return patientService.updatePatient(id, data);
+    }
+
+    @PostMapping ("/s")
+    public List<Patient> addPatients(@RequestBody List<Patient> patients){
+        patientService.addPatients(patients);
+        return getPatientS();
     }
 
 }

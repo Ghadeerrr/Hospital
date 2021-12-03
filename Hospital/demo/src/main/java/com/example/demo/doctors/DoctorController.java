@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path= "doctors")
-
+@CrossOrigin("*")
 public class DoctorController {
 
 

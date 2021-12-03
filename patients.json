@@ -1,64 +1,64 @@
 [
     {
-        "fname": "Manal",
-        "Lname": "Mohammed",
+        "firstName": "Manal",
+        "lasttName": "Mohammed",
         "age":15,
-        "boldTypy":"+A",
+        "bloodType":"+A",
         "phoneNumber":"0558324750",
         "password":"123456",
          "gender":"female"
           },
           {
-        "fname": "Amal",
-        "Lname": "Khaled",
+        "firstName": "Amal",
+        "lasttName": "Khaled",
         "age":20,
-        "boldTypy":"-A",
+        "bloodType":"-A",
         "phoneNumber":"0501274659",
         "password":"123456",
          "gender":"female"
         
           },
           {
-               "fname": "Mohammed",
-        "Lname": "Abdulrahmman",
+               "firstName": "Mohammed",
+        "lasttName": "Abdulrahmman",
         "age":28,
-        "boldTypy":"+AB",
+        "bloodType":"+AB",
         "phoneNumber":"0530283940",
         "password":"654321",
          "gender":"male"
           },
-          { "fname": "Ghadeer",
-        "Lname": "Mansour",
+          { "firstName": "Ghadeer",
+        "lasttName": "Mansour",
         "age":23,
-        "boldTypy":"+O",
+        "bloodType":"+O",
         "phoneNumber":"0551984756",
         "password":"654321",
          "gender":"female"
         },
          
         {
-             "fname": "Razan",
-        "Lname": "Naser",
+             "firstName": "Razan",
+        "lasttName": "Naser",
         "age":18,
-        "boldTypy":"+B",
+        "bloodType":"+B",
         "phoneNumber":"0501020304",
         "password":"",
          "gender":"Female"
         },
         { 
-            "fname": "Ahmad",
-        "Lname": "Abdullah",
+            "firstName": "Ahmad",
+        "lasttName": "Abdullah",
         "age":30,
-        "boldTypy":"+O",
+        "bloodType":"+O",
         "phoneNumber":"0550109876",
         "password":"654321",
          "gender":"male"
         },
         {
-        "fname": "Mansour",
-        "Lname": "Mohammed",
+        "firstName": "Mansour",
+        "lasttName": "Mohammed",
         "age":48,
-        "boldTypy":"+B",
+        "bloodType":"+B",
         "phoneNumber":"0557654432",
         "password":"123456",
          "gender":"male"
