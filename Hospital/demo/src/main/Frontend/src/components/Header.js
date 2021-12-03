@@ -7,7 +7,7 @@ function Header() {
       <div className="div center container">
         <h1 className="h-header">Take Care Of Your Health</h1>
 
-        <p className="p-header">We're Always Ready To Help You .</p>
+        <p className="p-header">We're Always Ready To Help You.</p>
 
         <div className="hero-btns">
           <Link to="/login">

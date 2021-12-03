@@ -1,8 +1,12 @@
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import { useNavigate } from "react-router-dom";
+
 
 function Footer() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="flex"></div>
@@ -55,46 +59,12 @@ function Footer() {
                     }}
                   />
                   <p className="text-white">
-                    is e-commerce company. The company mainly focuses on women's
-                    wear, but it also offers men's apparel, children's clothes,
-                    accessories, shoes, bags and other fashion items.
-                  </p>
-                </div>
-
-                <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">Products</h6>
-                  <hr
-                    className="mb-4 mt-0 d-inline-block mx-auto"
-                    style={{
-                      width: "60px",
-                      backgroundColor: "gray",
-                      height: "2px",
-                    }}
-                  />
-                  <p>
-                    <a href="#!" className="text-white">
-                      Men's Clothing
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      women's Clothing
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Jewelory
-                    </a>
-                  </p>
-                  <p>
-                    <a href="#!" className="text-white">
-                      Electronic
-                    </a>
+                   The well being and health of each and every person is very precious and should be guarded and protected.
                   </p>
                 </div>
 
                 <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                  <h6 className="text-uppercase fw-bold">Useful links</h6>
+                  <h6 className="text-uppercase fw-bold">Our Service</h6>
                   <hr
                     className="mb-4 mt-0 d-inline-block mx-auto"
                     style={{
@@ -104,23 +74,34 @@ function Footer() {
                     }}
                   />
                   <p>
-                    <a href="#!" className="text-white">
-                      Your Account
+                    <a href onClick={() => {
+                  navigate(`/Pediatres`);
+                }} className="text-white">
+                      Pediatres
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Shipping company
+                    <a href onClick={() => {
+                  navigate(`/Radiology`);
+                }} className="text-white">
+                      Radiology
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Shipping Rates
+                    <a href onClick={() => {
+                  navigate(`/ophthalmology`);
+                }} className="text-white">
+                      Ophthalmology
                     </a>
                   </p>
                   <p>
-                    <a href="#!" className="text-white">
-                      Help
+                    <a href onClick={()=>{navigate(`/Dental`);}} className="text-white">
+                    Dental
+                    </a>
+                  </p>
+                  <p>
+                    <a href onClick={()=>{navigate(`/FamilyMedicine`);}} className="text-white">
+                    Family Medicine
                     </a>
                   </p>
                 </div>
@@ -136,16 +117,16 @@ function Footer() {
                     }}
                   />
                   <p className="text-white">
-                    <i className="fas fa-home mr-3" /> KSA, NY 10012, US
+                    <i className="fas fa-home mr-3" /> KSA, Riyadh, Riyadh
                   </p>
                   <p className="text-white">
                     <i className="fas fa-envelope mr-3" /> info@example.com
                   </p>
                   <p className="text-white">
-                    <i className="fas fa-phone mr-3" /> + 01 234 567 88
+                    <i className="fas fa-phone mr-3" /> + 011 200 00 00
                   </p>
                   <p className="text-white">
-                    <i className="fas fa-print mr-3" /> + 01 234 567 89
+                    <i className="fas fa-print mr-3" /> + 011 222 00 00
                   </p>
                 </div>
               </div>
@@ -156,7 +137,7 @@ function Footer() {
             className="text-center p-3"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
           >
-            © 2020 Copyright
+            © 2021 Copyright
           </div>
         </footer>
       </div>
