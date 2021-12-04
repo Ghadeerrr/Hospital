@@ -3,6 +3,7 @@ package com.example.demo.doctors;
 
 import com.example.demo.departments.Department;
 import com.example.demo.departments.departmentRepository;
+import com.example.demo.patients.Patient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +27,12 @@ public class DoctorService {
         Department department=departmentrepository.findById(department_id).orElse(null);
         doctor.setDepartment(department);
         return doctorrepository.save(doctor);
+    }
+
+    public Doctor getDoctor(String id){
+        Integer Doctor_id = Integer.parseInt(id);
+
+        return doctorrepository.findById(Doctor_id).orElse(null);
     }
 
     public List<Doctor> getDoctorDepartment(int departmentId){

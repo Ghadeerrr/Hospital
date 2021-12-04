@@ -1,83 +1,99 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
-// import { useState } from "react";
-// import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
-
-// import { setUserName, setId } from "../reducers/Login/login";
 import CloseIcon from "@material-ui/icons/Close";
+import { login, UserType } from "../reducers/Login/action";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import PersonPinIcon from "@material-ui/icons/PersonPin";
 
 import "./components.css";
 import "./Login.css";
 function LogIn() {
-  // const dispatch = useDispatch();
-  // const [userinfo, setUserinfo] = useState("");
-  // const [password, setPassword] = useState("");
+  const [userinfo, setUserinfo] = useState("");
+  const [password, setPassword] = useState("");
   // const [toggle, setToggle] = useState(false);
-  // const navigate = useNavigate();
+  const [patients, setpatients] = useState();
+  const [doctors, setdoctors] = useState();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  // const state = useSelector((state) => {
-  //   return {
-  //     loginDetails: state.loginDetails.loginDetails,
-  //   };
-  // });
-  // console.log(state.loginDetails);
+  const state = useSelector((state) => {
+    return {
+      isLoggedIn: state.usersReducer.isLoggedIn,
+      UserType: state.usersReducer.UserType,
+    };
+  });
 
-  // const usernameOrEmail = (e) => {
-  //   setUserinfo(e.target.value);
-  // };
-  // const passwordValue = (e) => {
-  //   setPassword(e.target.value);
-  // };
-  // const checkLogin = (e) => {
-  //   e.preventDefault();
-  //   if (userinfo.includes("@")) {
-  //     const foundUser = state.loginDetails.find(
-  //       (element) => element.email == userinfo
-  //     );
-  //     const foundPassword = state.loginDetails.find(
-  //       (element) => element.password == password
-  //     );
-  //     if (foundUser && foundPassword) {
-  //       console.log("user found");
-  //       state.loginDetails.map((ele) => {
-  //         if (ele.email == userinfo) {
-  //           const action1 = setUserName(ele.username);
-  //           dispatch(action1);
-  //           const action2 = setId(ele.id);
-  //           dispatch(action2);
-  //           console.log("id is" + ele.id);
-  //           navigate("/");
-  //         }
-  //       });
-  //     } else {
-  //       setToggle(true);
-  //     }
-  //   } else {
-  //     const foundUser = state.loginDetails.find(
-  //       (element) => element.username == userinfo
-  //     );
-  //     const foundPassword = state.loginDetails.find(
-  //       (element) => element.password == password
-  //     );
-  //     if (foundUser && foundPassword) {
-  //       console.log("user found");
-  //       const action1 = setUserName(userinfo);
-  //       dispatch(action1);
-  //       state.loginDetails.map((ele) => {
-  //         if (ele.username == userinfo) {
-  //           const action2 = setId(ele.id);
-  //           dispatch(action2);
-  //         }
-  //       });
-  //       navigate("/");
-  //     } else {
-  //       setToggle(true);
-  //     }
-  //   }
-  // };
+  const [Category, setCategory] = useState();
+  const byCategory = (e) => {
+    setCategory(e.target.value);
+  };
+
+  const usernameValue = (e) => {
+    setUserinfo(e.target.value);
+  };
+  const passwordValue = (e) => {
+    setPassword(e.target.value);
+  };
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8080/patients")
+      .then((res) => {
+        console.log(res.data);
+        setpatients(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+
+    axios
+      .get("http://localhost:8080/doctors")
+      .then((res) => {
+        console.log(res.data);
+        setdoctors(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const getUser = () => {
+
+    const theuser = {
+      username: userinfo,
+      password: password,
+    };
+
+    if(Category === "Patient"){
+      patients.forEach((e) => {
+        if (e.phoneNumber === theuser.username && e.password === theuser.password) {
+          console.log("Hi Patient ;)");
+          const action = login(e);
+          const action2 = UserType(Category)
+          dispatch(action);
+          dispatch(action2);
+          navigate("/");
+        }
+      });
+    }else if(Category === "Doctor"){
+        doctors.forEach((e) => {
+          if (e.phoneNumber === theuser.username && e.password === theuser.password) {
+            console.log("Hi Doctor ;)");
+            const action = login(e);
+            const action2 = UserType(Category)
+            dispatch(action);
+            dispatch(action2);
+            navigate("/");
+          }
+        });
+        
+      }
+  };
 
   return (
     <div className="background">
@@ -96,7 +112,7 @@ function LogIn() {
             </label>
             <input
               type="text"
-              // onChange={usernameOrEmail}
+              onChange={usernameValue}
               className="form-control"
               placeholder="Enter Phone number"
             />
@@ -107,42 +123,38 @@ function LogIn() {
             </label>
             <input
               type="password"
-              // onChange={passwordValue}
+              onChange={passwordValue}
               className="form-control"
               placeholder="Enter password"
             />
           </div>
           <div className="form-group">
-            <div className="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                className="custom-control-input"
-                id="customCheck1"
-              />
-              <label className="custom-control-label" htmlFor="customCheck1">
-                Remember me
-              </label>
-            </div>
-          </div>
-          {/* {toggle && ( */}
           <label>
-            <b className="b-login">phone number or password is wrong</b>
+            <input
+              type="radio"
+              onChange={byCategory}
+              name="Category"
+              value="Patient"
+            />
+            Patient 
           </label>
-          {/* )} */}
-          <br />
-          <button
-            type="submit"
-            // onClick={(e) => checkLogin(e)}
-            className="button-b"
-          >
+          <label>
+            <input
+              type="radio"
+              onChange={byCategory}
+              name="Category"
+              value="Doctor"
+            />
+            Doctor
+          </label>
+          </div>
+          <button type="button" onClick={() => { getUser(); }} className="button-b" >
             Login
           </button>
+          <br/>
           <p className="forgot-password text-right">
-            Forgot <a href="#">password?</a>
+            You don't have an account ? <a href className="navig" onClick={()=>{navigate("/SignUp");}}>  Sign Up</a>
           </p>
-          <p className="forgot-password text-right">
-            You don't have an account ?<a href="/SignUp">Sign Up</a>
-          </p>{" "}
         </div>
       </form>
     </div>

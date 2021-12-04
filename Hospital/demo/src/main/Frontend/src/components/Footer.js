@@ -74,33 +74,27 @@ function Footer() {
                     }}
                   />
                   <p>
-                    <a href onClick={() => {
-                  navigate(`/Pediatres`);
-                }} className="text-white">
+                    <a href className="text-white">
                       Pediatres
                     </a>
                   </p>
                   <p>
-                    <a href onClick={() => {
-                  navigate(`/Radiology`);
-                }} className="text-white">
+                    <a href className="text-white">
                       Radiology
                     </a>
                   </p>
                   <p>
-                    <a href onClick={() => {
-                  navigate(`/ophthalmology`);
-                }} className="text-white">
+                    <a href className="text-white">
                       Ophthalmology
                     </a>
                   </p>
                   <p>
-                    <a href onClick={()=>{navigate(`/Dental`);}} className="text-white">
+                    <a href className="text-white">
                     Dental
                     </a>
                   </p>
                   <p>
-                    <a href onClick={()=>{navigate(`/FamilyMedicine`);}} className="text-white">
+                    <a href className="text-white">
                     Family Medicine
                     </a>
                   </p>

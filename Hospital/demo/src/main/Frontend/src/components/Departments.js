@@ -2,6 +2,8 @@ import "./Departments.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect ,useState} from "react";
 import axios from "axios";
+import { useSelector } from "react-redux";
+
 
 function Departments() {
   const navigate = useNavigate();
@@ -18,6 +20,12 @@ function Departments() {
       });
   }, []);
 
+  const state = useSelector((state) => {
+    return {
+      isLoggedIn: state.usersReducer.isLoggedIn,
+    };
+  });
+
   return (
     <div>
       <div className="flex">
@@ -31,10 +39,10 @@ function Departments() {
                       <div className="card-body text-center">
                         <h4 className="card-title title-discription">{e.name}</h4>
                         <p className="lead">{e.description}</p>
-                        <button type="button" className="btn" onClick={()=>{navigate(`/Department/${e.id}`);}}>
+                        {state.isLoggedIn && (<button type="button" className="btn" onClick={()=>{navigate(`/Department/${e.id}`);}}>
                           Book Now
                           <span className="fas fa-chevron-right"></span>
-                        </button>
+                        </button>)}
                       </div>
                     </div>)
           }) : "Wait"}

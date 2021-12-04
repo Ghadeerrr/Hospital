@@ -25,14 +25,20 @@ public class AppointmentController {
         return appointmentService.getAllAppointment();
     }
 
-//    @GetMapping("/{id}")
-//    public Appointment getAppointment(@PathVariable String id ){
-//        return appointmentService.getAppointment(id);
-//    }
-@GetMapping ("patient/{id}")
-public List<Appointment> getPatientAppointment(@PathVariable int id){
-    return appointmentService.getPatientAppointment(id);
-}
+    @GetMapping("/{id}")
+    public Appointment getAppointment(@PathVariable String id ){
+        return appointmentService.getAppointment(id);
+    }
+
+    @GetMapping ("patient/{id}")
+    public List<Appointment> getPatientAppointment(@PathVariable int id){
+        return appointmentService.getPatientAppointment(id);
+    }
+
+    @GetMapping ("doctor/{id}")
+    public List<Appointment> getDoctorAppointment(@PathVariable int id){
+        return appointmentService.getDoctorAppointment(id);
+    }
 
     @PostMapping
     public String createAppointment(@RequestBody Appointment appointment) {

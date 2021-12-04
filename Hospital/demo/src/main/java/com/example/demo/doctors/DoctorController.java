@@ -1,6 +1,7 @@
 package com.example.demo.doctors;
 
 
+import com.example.demo.patients.Patient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +25,12 @@ public class DoctorController {
     @PostMapping
     public Doctor addDoctor(@RequestBody Form form){
         return doctordervice.addDoctor(form.getDoctor(), form.getDepartmentId());
+    }
+
+    @GetMapping("/id/{id}")
+    public Doctor getPatient(@PathVariable String id){
+        return doctordervice.getDoctor(id);
+
     }
 
 

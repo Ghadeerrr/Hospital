@@ -72,4 +72,8 @@ public class AppointmentService {
     public List<Appointment> getPatientAppointment(int patient_id){
         return appointmentRepository.findAllBypatient_id(patient_id);
     }
+
+    public List<Appointment> getDoctorAppointment(int doctor_id){
+        return appointmentRepository.findAllBydoctor_id(doctor_id);
+    }
 }
