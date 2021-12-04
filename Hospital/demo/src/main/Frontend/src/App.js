@@ -4,6 +4,8 @@ import SignUp from "./components/SignUp";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import DepartmentDetails from "./components/DepartmentDetails";
+import DoctorProfile from "./components/DoctorProfile";
+import PatientProfile from "./components/PatientProfile";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/Department/:id" element={<DepartmentDetails/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/DoctorProfile" element={<DoctorProfile/>}/>
+          <Route path="/PatientProfile" element={<PatientProfile/>}/>
         </Routes>
     </BrowserRouter>
   );

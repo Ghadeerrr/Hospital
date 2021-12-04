@@ -1,2 +1,15 @@
 
 
+.error-msg {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+  }
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: green;
+}
