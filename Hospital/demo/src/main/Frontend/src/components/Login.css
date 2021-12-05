@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap");
 .background {
-  background-image: linear-gradient(
-      rgba(41, 39, 39, 0.623),
-      rgba(41, 39, 39, 0.247)
-    ),
-    url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
-
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.589),
+    rgba(41, 39, 39, 0)
+  ),
+  url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
+  
   min-height: 50vh;
   background-position: center;
   background-size: cover;
@@ -21,11 +21,12 @@
   background-position: center;
 }
 .container-S {
+  display: grid;
   margin-left: 48%;
   width: 430px;
   height: auto;
-  background: #303f385e;
-  padding: 25px 40px;
+  background: #ffffffd0;
+  padding: 10px 40px;
   border-radius: 7%;
 }
 .icon-log {
@@ -36,6 +37,11 @@
 }
 .b-login {
   color: red;
+}
+
+.two-input{
+  display: grid;
+  grid-template-columns: 165px 165px;
 }
 
 .title-b {
@@ -62,7 +68,7 @@
   margin: 5px;
 }
 .Icon-x {
-  color: #469771;
+  color: #2387b6;
 }
 .Icon-x-m {
   margin-left: 100%;
@@ -93,7 +99,6 @@
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   border: none;
-  margin-bottom: 30px;
 }
 
 .m-r-0 {
@@ -109,8 +114,15 @@
 }
 
 .bg-c-lite-green {
-  background: linear-gradient(to right, #4e5753, #264436be, #6c7e76bd);
-  height: 200%;
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.781),
+    rgba(41, 39, 39, 0)
+  ),
+  url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1000%;
 }
 
 .user-profile {

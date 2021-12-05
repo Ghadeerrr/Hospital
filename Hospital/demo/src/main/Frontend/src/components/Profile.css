@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap");
 .background {
-  background-image: linear-gradient(
-      rgba(41, 39, 39, 0.623),
-      rgba(41, 39, 39, 0.247)
-    ),
-    url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
-
+  background:linear-gradient(
+    rgba(0, 0, 0, 0.219),
+    rgba(255, 255, 255, 0)
+  ),
+  url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
+  
   min-height: 50vh;
   background-position: center;
   background-size: cover;
