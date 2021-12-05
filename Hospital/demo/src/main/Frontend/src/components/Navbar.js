@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { logout } from "../reducers/Login/action";
 import { useDispatch } from "react-redux";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 import "./Navbar.css";
 
@@ -46,7 +47,7 @@ function Navbar() {
                 dispatch(action);
               }}
             >
-              Log Out
+              <ExitToAppIcon className="icon-logout" />
             </Link>
           )}
         </div>

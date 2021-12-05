@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Serif:wght@700&family=Yanone+Kaffeesatz:wght@600&display=swap");
 .background {
-  background:linear-gradient(
-    rgba(0, 0, 0, 0.219),
-    rgba(255, 255, 255, 0)
-  ),
-  url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
-  
+  background: linear-gradient(rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0)),
+    url(https://media.istockphoto.com/photos/doctor-in-hospital-background-with-copy-space-picture-id914490884?k=20&m=914490884&s=170667a&w=0&h=GeOFDObT_qsRk6ZH_GgbXUp4CkIcvDlIZK8n9eKdSd8=);
+
   min-height: 50vh;
   background-position: center;
   background-size: cover;
@@ -28,8 +25,8 @@
   padding: 25px 40px;
   border-radius: 7%;
 }
-.card-appo{
-    font-size: 14px;
+.card-appo {
+  font-size: 14px;
 }
 .icon-log {
   font-size: 9rem !important;
@@ -49,5 +46,3 @@
   font-size: 40px;
   color: rgba(27, 25, 25, 0.856);
 }
-
-
