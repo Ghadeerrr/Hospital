@@ -63,36 +63,40 @@ function LogIn() {
   }, []);
 
   const getUser = () => {
-
     const theuser = {
       username: userinfo,
       password: password,
     };
 
-    if(Category === "Patient"){
+    if (Category === "Patient") {
       patients.forEach((e) => {
-        if (e.phoneNumber === theuser.username && e.password === theuser.password) {
+        if (
+          e.phoneNumber === theuser.username &&
+          e.password === theuser.password
+        ) {
           console.log("Hi Patient ;)");
           const action = login(e);
-          const action2 = UserType(Category)
+          const action2 = UserType(Category);
           dispatch(action);
           dispatch(action2);
           navigate("/");
         }
       });
-    }else if(Category === "Doctor"){
-        doctors.forEach((e) => {
-          if (e.phoneNumber === theuser.username && e.password === theuser.password) {
-            console.log("Hi Doctor ;)");
-            const action = login(e);
-            const action2 = UserType(Category)
-            dispatch(action);
-            dispatch(action2);
-            navigate("/");
-          }
-        });
-        
-      }
+    } else if (Category === "Doctor") {
+      doctors.forEach((e) => {
+        if (
+          e.phoneNumber === theuser.username &&
+          e.password === theuser.password
+        ) {
+          console.log("Hi Doctor ;)");
+          const action = login(e);
+          const action2 = UserType(Category);
+          dispatch(action);
+          dispatch(action2);
+          navigate("/");
+        }
+      });
+    }
   };
 
   return (
@@ -129,32 +133,48 @@ function LogIn() {
             />
           </div>
           <div className="form-group">
-          <label>You Are: </label>
-          <label>
-            <input
-              type="radio"
-              onChange={byCategory}
-              name="Category"
-              value="Patient"
-            />
-            Patient 
-          </label>
-          <label>
-            <input
-              type="radio"
-              onChange={byCategory}
-              name="Category"
-              value="Doctor"
-            />
-            Doctor
-          </label>
+            <label>You Are: </label>
+            <label>
+              <input
+                type="radio"
+                onChange={byCategory}
+                name="Category"
+                value="Patient"
+              />
+              Patient
+            </label>
+            <label>
+              <input
+                type="radio"
+                onChange={byCategory}
+                name="Category"
+                value="Doctor"
+              />
+              Doctor
+            </label>
           </div>
-          <button type="button" onClick={() => { getUser(); }} className="button-b" >
+          <button
+            type="button"
+            onClick={() => {
+              getUser();
+            }}
+            className="button-b"
+          >
             Login
           </button>
-          <br/>
+          <br />
           <p className="forgot-password text-right">
-            You don't have an account ? <a href className="navig" onClick={()=>{navigate("/SignUp");}}>  Sign Up</a>
+            You don't have an account ?{" "}
+            <a
+              href
+              className="navig"
+              onClick={() => {
+                navigate("/SignUp");
+              }}
+            >
+              {" "}
+              Sign Up
+            </a>
           </p>
         </div>
       </form>
