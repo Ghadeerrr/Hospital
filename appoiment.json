@@ -1,0 +1,149 @@
+[
+{
+    "date": "2021-11-05",
+    "state": "Available",
+
+    "doctor":{
+        "id":9
+    }
+   
+},
+{
+    "date": "2021-11-06",
+    "state": "Available",
+
+    "doctor":{
+        "id":6
+    }
+   
+},
+{
+    "date": "2021-11-07",
+    "state": "Available",
+
+    "doctor":{
+        "id":1
+    }
+   
+},
+{
+    "date": "2021-11-08",
+    "state": "Available",
+
+    "doctor":{
+        "id":2
+    }
+   
+},
+{
+    "date": "2021-11-09",
+    "state": "Available",
+
+    "doctor":{
+        "id":3
+    }
+   
+},
+{
+    "date": "2021-11-10",
+    "state": "Available",
+
+    "doctor":{
+        "id":9
+    }
+   
+},
+{
+    "date": "2021-11-05",
+    "state": "Available",
+
+    "doctor":{
+        "id":4
+    }
+   
+},
+{
+    "date": "2021-11-06",
+    "state": "Available",
+
+    "doctor":{
+        "id":13
+    }
+   
+},
+{
+    "date": "2021-11-07",
+    "state": "Available",
+
+    "doctor":{
+        "id":11
+    }
+   
+},
+{
+    "date": "2021-11-08",
+    "state": "Available",
+
+    "doctor":{
+        "id":5
+    }
+   
+},
+{
+    "date": "2021-11-09",
+    "state": "Available",
+
+    "doctor":{
+        "id":7
+    }
+   
+},
+{
+    "date": "2022-01-01",
+    "state": "Available",
+
+    "doctor":{
+        "id":6
+    }
+   
+},
+{
+    "date": "2022-01-02",
+    "state": "Available",
+
+    "doctor":{
+        "id":7
+    }
+   
+},
+{
+    "date": "2022-01-01",
+    "state": "Available",
+
+    "doctor":{
+        "id":5
+    }
+   
+},
+{
+    "date": "2022-01-6",
+    "state": "Available",
+
+    "doctor":{
+        "id":9
+    }
+   
+},
+{
+    "date": "2022-01-05",
+    "state": "Available",
+
+    "doctor":{
+        "id":5
+    }
+   
+}
+
+
+
+]
