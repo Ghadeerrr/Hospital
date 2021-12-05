@@ -22,14 +22,14 @@ function DoctorsAdv() {
                 </Col>
                 <Col>
                   <div>
-                    <h1 className=" text-black-90"> Dr. Jana</h1>
+                    <h1 className=" text-black-90"> Dr. haron Hind</h1>
                   </div>
                   <p>
-                    A pediatrician/doctor is a medical practitioner who works,
+                    Ophthalmologist | Successfully performed on more than 500
+                    patients
                     <br />
-                    directly with children. Also known as pediatricians.
+                    Dr. Bowen Chan has more than 15 years of experience
                     <br />
-                    Dr. Jana has more than 5 years of experience
                   </p>
                 </Col>
               </Row>
@@ -50,14 +50,14 @@ function DoctorsAdv() {
                 </Col>
                 <Col>
                   <div>
-                    <h1 className=" text-black-90"> Dr. Jana</h1>
+                    <h1 className=" text-black-90"> Dr. Sheej Mathai</h1>
                   </div>
                   <p>
                     A pediatrician/doctor is a medical practitioner who works,
                     <br />
                     directly with children. Also known as pediatricians.
                     <br />
-                    Dr. Jana has more than 5 years of experience
+                    Dr. Sheej Mathai has more than 5 years of experience
                   </p>
                 </Col>
               </Row>
@@ -78,14 +78,14 @@ function DoctorsAdv() {
                 </Col>
                 <Col>
                   <div>
-                    <h1 className=" text-black-90"> Dr. Jana</h1>
+                    <h1 className=" text-black-90"> Dr. leon mcdougle</h1>
                   </div>
                   <p>
-                    A pediatrician/doctor is a medical practitioner who works,
+                    Dentist specialized in senior dentistry, dental implants,
                     <br />
-                    directly with children. Also known as pediatricians.
+                    gum treatment, oral diseases, endodontics and endodontics
                     <br />
-                    Dr. Jana has more than 5 years of experience
+                    Dr. leon mcdougle has more than 8 years of experience
                   </p>
                 </Col>
               </Row>
