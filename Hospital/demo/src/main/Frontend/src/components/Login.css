@@ -23,7 +23,7 @@
 .container-S {
   margin-left: 48%;
   width: 430px;
-  height: 560px;
+  height: auto;
   background: #303f385e;
   padding: 25px 40px;
   border-radius: 7%;
