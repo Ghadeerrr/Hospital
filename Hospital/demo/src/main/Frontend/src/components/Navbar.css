@@ -12,7 +12,7 @@
   font-family: "Anton", sans-serif;
   font-family: "Noto Serif", serif;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   margin-top: 1.5%;
   font-size: 38px;
 }
@@ -62,4 +62,7 @@ h5 {
   flex: 1;
   align-items: center;
   border-radius: 24px;
+}
+.icon-logout {
+  font-size: 2.2rem !important;
 }

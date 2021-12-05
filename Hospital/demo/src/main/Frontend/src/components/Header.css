@@ -91,8 +91,15 @@ button {
 
 .btn-b {
   display: inline-block;
-  margin-top: 5px;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(73, 69, 69, 0.116); 
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: 1px solid #139279;
+
+  border-color: #139279;
+  border-radius: 2px;
+  box-shadow: 0.4rem 0.4rem 0 rgba(73, 69, 69, 0.2);
+  color: #139279;
   cursor: pointer;
   color: #212529;
   text-align: center;

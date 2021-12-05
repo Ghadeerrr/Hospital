@@ -27,7 +27,7 @@ function DepartmentDetails() {
   return (
     <>
       <Navbar />
-    
+
       <div className="container">
         <div className="row justify-content-around">
           {data !== undefined
@@ -58,7 +58,7 @@ function DepartmentDetails() {
               })
             : "Wait"}
         </div>
-      {/* </div> */}
+        {/* </div> */}
       </div>
       <Footer />
     </>
