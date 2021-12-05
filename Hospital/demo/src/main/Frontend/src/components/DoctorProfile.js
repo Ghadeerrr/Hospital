@@ -42,13 +42,14 @@ function DoctorProfile(){
           <div>
               <h4>Appointments:</h4>
           {data !== undefined ? data.map((e)=>{
+            if(e.patient !==  null){
           return(<div className="Sh-card">
                       <div className="text-center">
                         <h4 className="card-appo">Date: {e.date}</h4><h4 className="card-appo">State: {e.state}</h4>
                         <p className="card-appo">with Patient: {e.patient.firstName} {e.patient.lasttName}</p>
                         <p className="card-appo">Age: {e.patient.age}, Blood Type: {e.patient.bloodType}</p>
                       </div>
-                    </div>)
+                    </div>)}
           }) : "Wait"}
           </div>
           <button className="button-b" onClick={()=>{navigate("/")}}>Back</button>
