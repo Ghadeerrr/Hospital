@@ -23,6 +23,7 @@ function Departments() {
   const state = useSelector((state) => {
     return {
       isLoggedIn: state.usersReducer.isLoggedIn,
+      UserType: state.usersReducer.UserType,
     };
   });
 
@@ -39,7 +40,7 @@ function Departments() {
                       <div className="card-body text-center">
                         <h4 className="card-title title-discription">{e.name}</h4>
                         <p className="lead">{e.description}</p>
-                        {state.isLoggedIn && (<button type="button" className="btn" onClick={()=>{navigate(`/Department/${e.id}`);}}>
+                        {state.isLoggedIn && state.UserType === "Patient" && (<button type="button" className="btn" onClick={()=>{navigate(`/Department/${e.id}`);}}>
                           Book Now
                           <span className="fas fa-chevron-right"></span>
                         </button>)}
