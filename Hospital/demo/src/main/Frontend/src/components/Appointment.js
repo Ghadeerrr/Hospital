@@ -67,6 +67,8 @@ function Appointment() {
     .catch((err) => {
       console.log(err);
     });
+
+    navigate("/PatientProfile");
   }
 
   
@@ -85,12 +87,12 @@ function Appointment() {
                     style={{ width: "18rem" }}
                   >
                     <div className="card-body text-center">
-                      <h4 className="card-title title-discription"> The appointment </h4>
-                      <h4 className="card-title title-discription"> {Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10) } </h4>
+                      <h4> The Appointment </h4>
+                      <h4> {Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10) } </h4>
                       <h6>Date : {e.date}</h6>
                       <h6>Time : {Math.floor(Math.random() * 24)+": "+Math.floor(Math.random() * 60)+" AM"} </h6>
-                      <p className="lead">
-                        <button type="button" className="btn"  onClick={()=>{updatePatient(e)}}>
+                      <p className="text-dep">
+                        <button type="button" className="btn-v"  onClick={()=>{updatePatient(e)}}>
                           {e.state}
                         </button>
                       </p>

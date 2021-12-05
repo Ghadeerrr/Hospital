@@ -71,9 +71,7 @@ label {
 .title-filter {
   margin-bottom: 20px;
 }
-.card {
-  height: 750px;
-}
+
 .Sh-card {
   transition: 0.3s;
 }
@@ -82,7 +80,7 @@ label {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .title-discription {
-  height: 60px;
+  height: 40px;
   overflow: hidden;
   margin-bottom: 5px;
 }

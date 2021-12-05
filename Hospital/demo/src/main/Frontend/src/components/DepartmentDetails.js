@@ -35,16 +35,16 @@ function DepartmentDetails() {
                 return (
                   <div className=" my-5 py-4 Sh-card" style={{ width: "18rem" }}>
                   {/* <div className=" my-5 py-4 Sh-card"> */}
-                    <div className="card-body text-center">
+                    <div className="card-body text-center grid-five">
                       <img src={immg} alt="" width="250px" />
-                      <h4 className="card-title title-discription">
+                      <h4>
                         Dr. {e.firstName} {e.lasttName}
                       </h4>
-                      <p className="lead">phone Number: {e.phoneNumber}</p>
-                      <p className="lead">gender: {e.gender}</p>
+                      <p className="text-dep">Phone Number: {e.phoneNumber}</p>
+                      <p className="text-dep">Gender: {e.gender}</p>
                       <button
                         type="button"
-                        className="btn"
+                        className="btn-b"
                         onClick={() => {
                           navigate(`/Doctor/${e.id}`);
                         }}
