@@ -1,132 +1,132 @@
 [{
     "doctor":{
-    "fname": "Bowen",
-    "lname": "Chan",
+    "firstName": "Bowen",
+    "lasttName": "Chan",
     "gender": "M",
-    "image": "/image/Bowen-chan.jpg",
-    "phone": "4164861956",
+    "img": "/image/Bowen-chan.jpg",
+    "phoneNumber": "4164861956",
     "password": "345267"},
     "departmentId":1
 }
 
 ,{
     "doctor":{
-    "fname": "Michael",
-    "lname":"Lewis",
+    "firstName": "Michael",
+    "lasttName":"Lewis",
     "gender": "M",
-    "image": "/image/michael-lewis.jpg",
-    "phone": "4164861956",
+    "img": "/image/michael-lewis.jpg",
+    "phoneNumber": "4164861956",
     "password": "341262"},
     "departmentId":1
 }
 ,{
     "doctor":{
-    "fname": "haron",
-    "lname":"Hind",
+    "firstName": "haron",
+    "lasttName":"Hind",
     "gender": "F",
-    "image": "/image/sharonwelch.jpg",
-    "phone": "4164861956",
+    "img": "/image/sharonwelch.jpg",
+    "phoneNumber": "4164861956",
     "password": "654262"},
     "departmentId":1
 }
 ,{
     "doctor":{
-    "fname": "Sheeja",
-    "lname": "Mathai",
+    "firstName": "Sheeja",
+    "lasttName": "Mathai",
     "gender": "F",
-    "image": "/image/drmathai.jpg",
-    "phone": "6477222370",
+    "img": "/image/drmathai.jpg",
+    "phoneNumber": "6477222370",
     "password":"341243"},
     "departmentId":2
 }
 ,
 {
     "doctor":{
-    "fname": "John",
-    "lname":"Suh",
+    "firstName": "John",
+    "lasttName":"Suh",
     "gender": "M",
-    "image": "/image/John-Suh.jpg",
-    "phone": "6477222370",
+    "img": "/image/John-Suh.jpg",
+    "phoneNumber": "6477222370",
     "password":"651162"},
     "departmentId":2
 },
 {
     "doctor":{
-    "fname": "leon",
-    "lname":"mcdougle",
+    "firstName": "leon",
+    "lasttName":"mcdougle",
     "gender": "M",
-    "image": "/image/leon-mcdougle.jpg",
-    "phone": "6210002330",
+    "img": "/image/leon-mcdougle.jpg",
+    "phoneNumber": "6210002330",
     "password":"891161"},
     "departmentId":3
 },
 {
     "doctor":{
-    "fname": "Ali",
-    "lname":"Javadi",
+    "firstName": "Ali",
+    "lasttName":"Javadi",
     "gender": "M",
-    "image": "/image/Ali-Javadi.jpeg",
-    "phone": "6710451112",
+    "img": "/image/Ali-Javadi.jpeg",
+    "phoneNumber": "6710451112",
     "password":"821161"},
     "departmentId":3
 },
 {
-    "doctor":{
-    "fname": "Tran",
-    "lname":"Triet",
+    "firstName":{
+    "firstName": "Tran",
+    "lasttName":"Triet",
     "gender": "M",
-    "image": "/image/TranTriet.jpg",
-    "phone": "6715673212",
+    "img": "/image/TranTriet.jpg",
+    "phoneNumber": "6715673212",
     "password":"822261"},
     "departmentId":3
 },
 {
     "doctor":{
-    "fname": "bergan",
-    "lname":"catherine",
+    "firstName": "bergan",
+    "lasttName":"catherine",
     "gender": "F",
-    "image": "/image/bergan-catherine.jpg",
-    "phone": "6710451452",
+    "img": "/image/bergan-catherine.jpg",
+    "phoneNumber": "6710451452",
     "password":"421331"},
     "departmentId":4
 },
 {
     "doctor":{
-    "fname": "Khaled",
-    "lname":"Tabbara",
+    "firstName": "Khaled",
+    "lasttName":"Tabbara",
     "gender": "M",
-    "image": "/image/Khalid-Tabbara.jpg",
-    "phone": "6216252222",
+    "img": "/image/Khalid-Tabbara.jpg",
+    "phoneNumber": "6216252222",
     "password":"824561"},
     "departmentId":4
 },
 {
     "doctor":{
-    "fname": "coleman",
-    "lname":"gregory",
+    "firstName": "coleman",
+    "lasttName":"gregory",
     "gender": "M",
-    "image": "/image/coleman-gregory.jpg",
-    "phone": "6755055812",
+    "img": "/image/coleman-gregory.jpg",
+    "phoneNumber": "6755055812",
     "password":"82771"},
     "departmentId":4
 },
 {
     "doctor":{
-    "fname": "pravia",
-    "lname":"cristina",
+    "firstName": "pravia",
+    "lasttName":"cristina",
     "gender": "F",
-    "image": "/image/pravia-cristina.jpg",
-    "phone": "6957456311",
+    "img": "/image/pravia-cristina.jpg",
+    "phoneNumber": "6957456311",
     "password":"842161"},
     "departmentId":5
 },
 {
     "doctor":{
-    "fname": "hernandezparra",
-    "lname":"jennifer",
+    "firstName": "hernandezparra",
+    "lasttName":"jennifer",
     "gender": "F",
-    "image": "/image/hernandezparra-jennifer.jpg",
-    "phone": "6975741182",
+    "img": "/image/hernandezparra-jennifer.jpg",
+    "phoneNumber": "6975741182",
     "password":"900061"},
     "departmentId":5
     }

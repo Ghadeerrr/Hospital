@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 import "./Navbar.css";
 
 function Navbar() {
-
   const dispatch = useDispatch();
   const state = useSelector((state) => {
     return {
@@ -25,18 +24,31 @@ function Navbar() {
         <div className="space"></div>
         <div className="nav-2">
           {state.isLoggedIn && (
-          <Link to="/" className="link"  onClick={() => {
-            const action = logout();
-            dispatch(action);
-          }}>Log Out</Link> )}
+            <Link
+              to="/"
+              className="link"
+              onClick={() => {
+                const action = logout();
+                dispatch(action);
+              }}
+            >
+              Log Out
+            </Link>
+          )}
         </div>
         <div className="nav-2">
           {state.isLoggedIn && state.UserType === "Doctor" && (
-          <Link to="/DoctorProfile" className="link">Your Profile</Link> )}
+            <Link to="/DoctorProfile" className="link">
+              Your Profile
+            </Link>
+          )}
         </div>
         <div className="nav-2">
           {state.isLoggedIn && state.UserType === "Patient" && (
-          <Link to="/PatientProfile" className="link">Your Profile</Link> )}
+            <Link to="/PatientProfile" className="link">
+              Your Profile
+            </Link>
+          )}
         </div>
         {/* <div className="nav-2">
           <Link to="/" className="link">
