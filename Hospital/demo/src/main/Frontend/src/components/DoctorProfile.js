@@ -63,8 +63,8 @@ function DoctorProfile() {
 
   return (
     <div className="page-content page-container" id="page-content">
-      <div className="padding">
-        <div className="row container d-flex justify-content-center">
+      {/* <div className="padding"> */}
+      <div className="row d-flex justify-content-center" style={{padding:"30px 0 30px 0"}}>
           <div className="col-xl-60 col-md-9">
             <div className="card user-card-full">
               <div className="row m-l-0 m-r-0">
@@ -74,7 +74,7 @@ function DoctorProfile() {
                       <AccountBoxIcon className="icon-z" />
                     </div>
                     <h6 className="f-w-600">
-                      DR. {state.currentUser.firstName}{" "}
+                      Dr. {state.currentUser.firstName}{" "}
                       {state.currentUser.lasttName}
                     </h6>
 
@@ -121,8 +121,7 @@ function DoctorProfile() {
                           ? data.map((e) => {
                               if (e.patient !== null) {
                                 return (
-                                  <div>
-                                    <div>
+                                   <div className="b-b-default">
                                       <h4 className="card-appo">
                                         Date: {e.date}{" "}
                                         <CheckCircleIcon className="icon-m" />{" "}
@@ -139,8 +138,7 @@ function DoctorProfile() {
                                         Age: {e.patient.age}, Blood Type:{" "}
                                         {e.patient.bloodType}
                                       </p>
-                                    </div>
-                                  </div>
+                                   </div>
                                 );
                               }
                             })
@@ -160,7 +158,7 @@ function DoctorProfile() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 }

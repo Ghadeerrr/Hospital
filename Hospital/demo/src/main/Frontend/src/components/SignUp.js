@@ -208,41 +208,37 @@ function SignUp() {
             </Link>
           </div>
           <h2 className="title-b">Sign Up</h2>
-          <div className="form-group">
-            <label>first name</label>
+          <div className="form-group two-input">
+            <label>First Name
             <input
               type="text"
               className="form-control"
               placeholder="First name"
               onChange={changeFirstName}
-            />
-          </div>
-          <div className="form-group">
-            <label>Last name</label>
+            /></label>
+            <label>Last Name
             <input
               type="text"
               className="form-control"
               placeholder="First name"
               onChange={changeLastName}
-            />
+            /></label>
           </div>
-          <div className="form-group">
-            <label>Age  </label>
+          <div className="form-group two-input">
+          <label>Phone Number 
             <input
               type="text"
               className="form-control"
-              placeholder="Enter age"
-              onChange={changeAge}
-            />
-          </div>
-          <div className="form-group">
-            <label>Phone number </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Enter Phone number"
+              placeholder="000-000-0000"
               onChange={changePhoneNumber}
-            />
+            /></label>
+            <label>Age  
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Your age"
+              onChange={changeAge}
+            /></label>
           </div>
           <div className="form-group">
             <label>Password</label>
@@ -252,17 +248,9 @@ function SignUp() {
               placeholder="Enter password"
               onChange={changePassword}
             />
-          </div>{" "}
+          </div>
           <div className="form-group">
-
-
             <label>Blood type</label>
-            {/* <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              onChange={changePassword}
-            /> */}
             <select onClick={bloodTypeChange} >
               <option onSelect={bloodTypeChange}>A+</option>
               <option onClick={bloodTypeChange}>A-</option>
@@ -274,6 +262,7 @@ function SignUp() {
           </div>
 
           <div className="form-group">
+          <label>Gender: </label>
           <label>
             <input
               type="radio"
@@ -295,6 +284,7 @@ function SignUp() {
           </div>
 
           <div className="form-group">
+          <label>You Are: </label>
           <label>
             <input
               type="radio"
@@ -333,7 +323,7 @@ function SignUp() {
             Sign Up
           </button>
           <p className="forgot-password text-right">
-            Already registered ?<Link to="/login">Log in</Link>
+            Already registered ?<Link to="/login"> Log in</Link>
           </p>
         </div>
       </form>

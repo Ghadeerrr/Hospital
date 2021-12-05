@@ -129,6 +129,7 @@ function LogIn() {
             />
           </div>
           <div className="form-group">
+          <label>You Are: </label>
           <label>
             <input
               type="radio"

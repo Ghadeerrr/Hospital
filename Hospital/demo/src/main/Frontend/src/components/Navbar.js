@@ -23,20 +23,6 @@ function Navbar() {
         </h5>
         <div className="space"></div>
         <div className="nav-2">
-          {state.isLoggedIn && (
-            <Link
-              to="/"
-              className="link"
-              onClick={() => {
-                const action = logout();
-                dispatch(action);
-              }}
-            >
-              Log Out
-            </Link>
-          )}
-        </div>
-        <div className="nav-2">
           {state.isLoggedIn && state.UserType === "Doctor" && (
             <Link to="/DoctorProfile" className="link">
               Your Profile
@@ -50,22 +36,20 @@ function Navbar() {
             </Link>
           )}
         </div>
-        {/* <div className="nav-2">
-          <Link to="/" className="link">
-            Departments
-          </Link>
-        </div>
-
         <div className="nav-2">
-          <Link to="/" className="link">
-            Doctors
-          </Link>
+          {state.isLoggedIn && (
+            <Link
+              to="/"
+              className="link"
+              onClick={() => {
+                const action = logout();
+                dispatch(action);
+              }}
+            >
+              Log Out
+            </Link>
+          )}
         </div>
-        <div className="nav-2">
-          <Link to="/" className="link">
-            Contact us
-          </Link>
-        </div> */}
       </div>
     </div>
   );
