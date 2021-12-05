@@ -27,12 +27,14 @@ function DepartmentDetails() {
   return (
     <>
       <Navbar />
+    
       <div className="container">
         <div className="row justify-content-around">
           {data !== undefined
             ? data.map((e) => {
                 return (
-                  <div className=" my-5 py-4 Sh-card">
+                  <div className=" my-5 py-4 Sh-card" style={{ width: "18rem" }}>
+                  {/* <div className=" my-5 py-4 Sh-card"> */}
                     <div className="card-body text-center">
                       <img src={immg} alt="" width="250px" />
                       <h4 className="card-title title-discription">
@@ -56,6 +58,7 @@ function DepartmentDetails() {
               })
             : "Wait"}
         </div>
+      {/* </div> */}
       </div>
       <Footer />
     </>
