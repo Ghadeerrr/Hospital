@@ -89,7 +89,7 @@ button {
   border: #139279 solid 5px;
 }
 
-.btn {
+.btn-b {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.5rem;
@@ -101,17 +101,31 @@ button {
   box-shadow: 0.4rem 0.4rem 0 rgba(73, 69, 69, 0.2);
   color: #139279;
   cursor: pointer;
-  font-size: 3rem;
-  background: #fff;
+  color: #212529;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: .25rem;
 }
 
-.btn:hover {
+.btn-b:hover {
   background: #139279;
   color: #fff;
 }
 
-.btn:hover span {
-  color: #139279;
-  background: #fff;
-  margin-left: 1rem;
+.btn-v {
+  display: inline-block;
+  margin-top: 5px;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(73, 69, 69, 0.116); 
+  cursor: pointer;
+  color: #212529;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0 9px;
+  border-radius: .25rem;
+}
+
+.btn-v:hover {
+  background: #139279;
+  color: #fff;
 }

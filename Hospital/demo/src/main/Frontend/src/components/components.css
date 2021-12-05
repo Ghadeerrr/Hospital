@@ -1,0 +1,212 @@
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 5%;
+}
+.star {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.inactive,
+.active {
+  background: transparent;
+  user-select: none;
+}
+
+.inactive {
+  color: #f1f1e8;
+}
+
+.active {
+  color: red;
+}
+.pagination {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 650px;
+  cursor: pointer;
+}
+.Filtration {
+  overflow: hidden;
+  float: left;
+  margin: 10px;
+  margin-top: 25px;
+  margin-right: 70px;
+}
+.filter-Categories {
+  margin: 20px;
+  padding: 20px;
+}
+.filter-price {
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
+.filter-star {
+  margin-top: 50px;
+  margin-left: -8px;
+}
+.outline-dark {
+  margin: 10px;
+}
+label {
+  display: block;
+  padding: 3px;
+}
+.modify-Product {
+  display: block;
+  margin: 5px;
+  padding: 5px;
+}
+.Button-admin {
+  text-align: center;
+}
+.footer {
+  clear: both;
+  position: relative;
+}
+
+.title-filter {
+  margin-bottom: 20px;
+}
+
+.Sh-card {
+  transition: 0.3s;
+}
+.Sh-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.title-discription {
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.title-discription:not(:first-child):before {
+  display: none;
+}
+.iamge-prodect {
+  height: 250px;
+  padding: 20px;
+  background: #fff;
+  margin: auto;
+}
+
+/* Admin */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 90%;
+  margin-bottom: 17px;
+}
+/* Style the inputs */
+
+.input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* Hide the placeholder texts (a) */
+
+::placeholder {
+  color: transparent;
+}
+.label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #dadce0;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submitBtn:hover {
+  background-color: #9867c5;
+  transform: translateY(-2px);
+}
+.input:focus + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: purple;
+}
+.input:focus {
+  border: 2px solid purple;
+}
+.input:not(:placeholder-shown) + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.myBtn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.myBtn:hover {
+  background-color: #555;
+}
