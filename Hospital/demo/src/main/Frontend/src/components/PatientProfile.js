@@ -4,7 +4,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import AccountBoxIcon from "@material-ui/icons/AccountBox";
+// import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import PersonIcon from "@material-ui/icons/Person";
@@ -45,13 +45,13 @@ function PatientProfile() {
                         <ArrowBackIcon className="icon-xx" />
                       </Link>
                     </div>
-                    <div className="m-b-25">
+                    {/* <div className="m-b-25">
                       <AccountBoxIcon className="icon-z" />
                     </div>
                     <h6 className="f-w">
                       {state.currentUser.firstName}{" "}
                       {state.currentUser.lasttName}
-                    </h6>
+                    </h6> */}
 
                     <i className=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16" />
                   </div>
@@ -66,6 +66,13 @@ function PatientProfile() {
                       </div>
                     </h6>
                     <div className="row">
+                      <div className="col-sm-6">
+                        <p className="m-b-10 f-w-600">Name:</p>
+                        <h6 className="text-muted f-w-400">
+                          {state.currentUser.firstName}{" "}
+                          {state.currentUser.lasttName}
+                        </h6>
+                      </div>
                       <div className="col-sm-6">
                         <p className="m-b-10 f-w-600">Phone Number:</p>
                         <div className="text-muted f-w-400">
