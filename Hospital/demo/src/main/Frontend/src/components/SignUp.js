@@ -145,7 +145,6 @@ function SignUp() {
         gender:gender})
         .then((res) => {
           console.log(res.data);
-                  alert("You have been successfully registered, you can log in now")
         navigate("/Login");
         })
         .catch((err) => {
@@ -154,7 +153,7 @@ function SignUp() {
 
       }
       else if(flag===1){
-        alert("Sorry, the phone number is taken ")
+        console.log("Sorry, the phone number is taken ")
         
       }
       
@@ -180,7 +179,6 @@ function SignUp() {
             departmentId:departmentId})
         .then((res) => {
           console.log(res.data);
-                  alert("You have been successfully registered, you can log in now")
         navigate("/Login");
         })
         .catch((err) => {
@@ -189,7 +187,7 @@ function SignUp() {
         
       }
       else if(flag2===1){
-        alert("Sorry, the phone number is taken ")
+        console.log("Sorry, the phone number is taken ")
         
       }
     }}
