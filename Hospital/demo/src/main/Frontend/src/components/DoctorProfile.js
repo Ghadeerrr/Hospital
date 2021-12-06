@@ -167,7 +167,7 @@ function DoctorProfile() {
                   </h6>
                   <div className="row">
                     <div className="col-sm-6">
-                      <p className="m-b-10 f-w-600">Available</p>
+                      <p className="m-b-10 f-w-600">Active</p>
                       {data !== undefined
                         ? data.map((e) => {
                             if (e.patient !== null) {
@@ -216,7 +216,7 @@ function DoctorProfile() {
                       <div className="row">
                         <div className="col-4">
                           <p className="m-b-10 f-w-600">
-                            Unavailable{" "}
+                            Inactive{" "}
                             <AddCircleIcon
                               className="icon-m"
                               onClick={() => {
