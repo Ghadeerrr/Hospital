@@ -90,7 +90,7 @@ function Appointment() {
                       <h4> The Appointment </h4>
                       <h4> {Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10) } </h4>
                       <h6>Date : {e.date}</h6>
-                      <h6>Time : {Math.floor(Math.random() * 24)+": "+Math.floor(Math.random() * 60)+" AM"} </h6>
+                      <h6>Time : {Math.floor(Math.random() * 12)+": "+Math.floor(Math.random() * 60)+" AM"} </h6>
                       <p className="text-dep">
                         <button type="button" className="btn-v"  onClick={()=>{updatePatient(e)}}>
                           {e.state}
