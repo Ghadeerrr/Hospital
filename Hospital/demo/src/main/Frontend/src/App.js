@@ -7,10 +7,12 @@ import DepartmentDetails from "./components/DepartmentDetails";
 import DoctorProfile from "./components/DoctorProfile";
 import PatientProfile from "./components/PatientProfile";
 import Appointment from "./components/Appointment";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Department/:id" element={<DepartmentDetails />} />
@@ -20,6 +22,7 @@ function App() {
         <Route path="/DoctorProfile" element={<DoctorProfile />} />
         <Route path="/PatientProfile" element={<PatientProfile />} />
       </Routes>
+      </ScrollToTop>
     </BrowserRouter>
   );
 }
